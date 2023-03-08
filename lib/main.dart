@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/home/main_food_page.dart';
+
+import 'package:food_delivery_app/pages/food/popular_food_detial.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,14 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Food Delivery App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
     
         primarySwatch: Colors.blue,
       ),
-      home:  MainFoodPage(),
+      home:  PopularFoodDetail(),
     );
   }
 }
