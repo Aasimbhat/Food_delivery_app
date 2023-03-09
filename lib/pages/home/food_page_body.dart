@@ -7,7 +7,7 @@ import 'package:food_delivery_app/widgets/big_text.dart';
 import 'package:food_delivery_app/widgets/icon_and_text_widget.dart';
 import 'package:food_delivery_app/widgets/small_text.dart';
 
-import 'package:food_delivery_app/home/main_food_page.dart';
+// import 'package:food_delivery_app/home/main_food_page.dart';
 
 class FoodPageBody extends StatefulWidget {
   @override
