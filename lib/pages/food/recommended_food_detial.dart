@@ -71,11 +71,10 @@ class RecommendedFoodDetial extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.only(
-              left: Dimensions.width20*2.5,
-            right: Dimensions.width20*2.5,
-            top: Dimensions.height10,
-            bottom: Dimensions.height10
-            ),
+                left: Dimensions.width20 * 2.5,
+                right: Dimensions.width20 * 2.5,
+                top: Dimensions.height10,
+                bottom: Dimensions.height10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -85,8 +84,11 @@ class RecommendedFoodDetial extends StatelessWidget {
                   backgroundColor: AppColors.mainColor,
                   iconColor: Colors.white,
                 ),
-
-                BigText(text: "\$12.88 "+ " X " +" 0 ",color: AppColors.mainBlackColor,size: Dimensions.font26,),
+                BigText(
+                  text: "\$12.88 " + " X " + " 0 ",
+                  color: AppColors.mainBlackColor,
+                  size: Dimensions.font26,
+                ),
                 AppIcon(
                     iconSize: Dimensions.iconSize24,
                     icon: Icons.add,
@@ -96,52 +98,52 @@ class RecommendedFoodDetial extends StatelessWidget {
             ),
           ),
           Container(
-          padding: EdgeInsets.only(
-              top: Dimensions.height30,
-              bottom: Dimensions.height30,
-              left: Dimensions.width20,
-              right: Dimensions.width20),
-          height: Dimensions.bottomHeightbar,
-          decoration: BoxDecoration(
-            color: AppColors.buttonBackgroundColor,
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(Dimensions.width20 * 2),
-                topRight: Radius.circular(Dimensions.width20 * 2)),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                padding: EdgeInsets.only(
-                    top: Dimensions.height20,
-                    bottom: Dimensions.height20,
-                    left: Dimensions.width20,
-                    right: Dimensions.width20),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(Dimensions.radius20),
-                    color: Colors.white),
-                child: Icon(
-                  Icons.favorite,color: AppColors.mainColor,
+            padding: EdgeInsets.only(
+                top: Dimensions.height30,
+                bottom: Dimensions.height30,
+                left: Dimensions.width20,
+                right: Dimensions.width20),
+            height: Dimensions.bottomHeightbar,
+            decoration: BoxDecoration(
+              color: AppColors.buttonBackgroundColor,
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(Dimensions.width20 * 2),
+                  topRight: Radius.circular(Dimensions.width20 * 2)),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.only(
+                      top: Dimensions.height20,
+                      bottom: Dimensions.height20,
+                      left: Dimensions.width20,
+                      right: Dimensions.width20),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(Dimensions.radius20),
+                      color: Colors.white),
+                  child: Icon(
+                    Icons.favorite,
+                    color: AppColors.mainColor,
                   ),
-              ),
-              Container(
-                padding: EdgeInsets.only(
-                    top: Dimensions.height20,
-                    bottom: Dimensions.height20,
-                    left: Dimensions.width20,
-                    right: Dimensions.width20),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(Dimensions.radius20),
-                    color: AppColors.mainColor),
-                child: BigText(
-                  text: "\$10 | Add to cart ",
-                  color: Colors.white,
                 ),
-              )
-            ],
-          ),
-        )
-
+                Container(
+                  padding: EdgeInsets.only(
+                      top: Dimensions.height20,
+                      bottom: Dimensions.height20,
+                      left: Dimensions.width20,
+                      right: Dimensions.width20),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(Dimensions.radius20),
+                      color: AppColors.mainColor),
+                  child: BigText(
+                    text: "\$10 | Add to cart ",
+                    color: Colors.white,
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
